@@ -1,0 +1,15 @@
+---
+layout: page
+title: Characters
+---
+
+<ul>
+  {% for character in site.characters %}
+    <li>
+      <h2><a href="{{character.url}}">{{ character.title }}</a></h2>
+      {% include figure.html image=character.thumbnail caption=character.thumbnail_caption width="100" style="float:right" %}
+      <em>{{character.epithet}} </em>
+      <p> {{character.excerpt}} </p>
+    </li>
+  {% endfor %}
+</ul>
