@@ -1,15 +1,34 @@
 ---
-layout: page
+layout: default
 title: Characters
 ---
+<style>
+  .character-short__entry {
+    outline: 1px solid lightgrey;
+    padding: 0.5em;
+  }
+  .character-short__entry h2 a {
+    color: inherit;
+  }
+</style>
 
-<ul>
+<h1 class="page-heading">Characters</h1>
+
+<ul class="post-list">
   {% for character in site.characters %}
-    <li>
+  <article class="character-short__entry">
+    {% include figure.html image=character.thumbnail caption=character.thumbnail_caption width="100" style="float:right; margin-left: 0.5em" %}
+    <header>
       <h2><a href="{{character.url}}">{{ character.title }}</a></h2>
-      {% include figure.html image=character.thumbnail caption=character.thumbnail_caption width="100" style="float:right" %}
-      <em>{{character.epithet}} </em>
-      <p> {{character.excerpt}} </p>
-    </li>
+      <p class="post-meta">
+        {{character.epithet}}
+        {%- if character.creator -%}, Created by {{character.creator | escape}}{%- endif -%}
+      </p>
+    </header>
+    <p> {{character.excerpt}} </p>
+    <footer>
+      <a href="{{character.url}}">(Read more)</a>
+    </footer>
+  </article>
   {% endfor %}
 </ul>

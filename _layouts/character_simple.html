@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<style media="screen">
+<style>
   .fact-sheet {
     display: flex;
     flex-wrap: wrap;
@@ -62,9 +62,9 @@ layout: default
     {% if page.thumbnail %}
       {% include figure.html image=page.thumbnail
         caption=page.thumbnail_caption width="100"
-        style="float:right; margin-left: 0.5em" %}
+        style="float:right; margin-left: 0.5em;" %}
     {% endif %}
-    
+
     <!-- Character Quote -->
     {% if page.quote %}
       <figure>
