@@ -1,0 +1,54 @@
+---
+layout: page
+title: Art Credits
+---
+<style>
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.artist-list__entry {
+  min-width: 225px;
+  width: 45%;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  outline: 1px solid lightgrey;
+  padding: 0.5em;
+}
+.artist-list__entry figure {
+  float: left;
+  /* Fixes an issue with the  */
+  margin-right: 10px;
+}
+.artist-list__entry ul {
+  list-style: none;
+}
+</style>
+
+<div class="artist-list">
+  {% for artist_hash in site.data.artists %}
+  <div class="artist-list__entry">
+    {% assign artist = artist_hash[1] %}
+    {% assign artist_name = artist_hash[0] %}
+    <!-- Name -->
+    <h2> {{ artist_name }} </h2>
+    <!-- Avatar -->
+    {% if artist.avatar %}
+      {% include figure.html width=100 image=artist.avatar %}
+    {% else %}
+      {% include figure.html width=100 image="assets/images/avatars/avatar-silhouette.png" %}
+    {% endif %}
+    <!-- Links -->
+    {% if artist.links %}
+    <ul>
+      {% for link in artist.links %}
+        <li>
+          <a href="{{link[1]}}">{{link[0]}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
