@@ -17,7 +17,7 @@ title: Characters
 <ul class="post-list">
   {% for character in site.characters %}
   <article class="character-short__entry">
-    {% include figure.html image=character.thumbnail caption=character.thumbnail_caption width="100" style="float:right; margin-left: 0.5em" %}
+    {% include figure.html image=character.image caption=character.image_caption width="100" style="float:right; margin-left: 0.5em" %}
     <header>
       <h2><a href="{{character.url}}">{{ character.title }}</a></h2>
       <p class="post-meta">
