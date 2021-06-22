@@ -84,3 +84,52 @@ around her anymore.
 Overall, Arlee Summers is an individual with room for personal growth. If she
 can learn to face her fears and to question what she is told, she may grow to
 be a strong woman, who can only be stopped by death itself.
+
+## Backstory
+Arlee was raised by Morgan and Brynlee Summers, both of whom have passed Lethal
+Examination previously, along with Annalyn Tabacchi, a family friend. Arlee's
+parents worked for LiveTech in secret, never allowing her to know of the
+company or its deadly hiring practices for fear that she might become scouted
+for Lethal Examination too. Growing up, Arlee never truly suspected her parents
+of keeping secrets, even at the worst of times.
+
+Since a young age, Arlee lived under a somewhat strict regimen of eating
+home-cooked meals and physical training, with Brynlee experimenting with
+various high-protein meals and focusing on training her strength, and other
+various teachers training her in defensive combat, endurance, and speed.
+
+Arlee's interest in escort work began in middle school, when a classmate
+offered to pay her to go to the dance with him. After some deliberation, she
+accepted and had a very good time. After this, Arlee realized that the life of
+an escort allowed her to go on enjoyable dates with a variety of people without
+needing the obligations of a long-term relationship. Still, Arlee always longed
+for someone to be all her own, who she could belong with and trust.
+
+In recent times, Arlee has struggled with her self-image, both in regards to
+her reputation and her body. Fearing loneliness and abandonment, Arlee
+developed an eating disorder. While Morgan was unaware of Arlee's change in
+diet, Brynlee took notice and allowed an adjustment to be made to her meal
+strategy: Arlee would drink more smoothies, but Brynlee would secretly prepare
+them with protein powders and nutrient supplements.
+
+Shortly before the events of the Lethal Examination in Tartarus, Arlee was made
+aware of a rumor that her mother was in an affair with the family's
+hairdresser, a woman named Daniela. This woman eventually turned up dead. Many
+of Arlee's classmates and neighbors theorized that Brynlee killed Daniela to
+cover up the affair. Arlee wanted to investigate to get to the bottom of the
+murder and prove her mother's innocence. But fate had something else in store
+for Arlee.
+
+## Appearance
+Arlee is a happy girl who frequently wears a bright smile on her pale ivory
+face. Her indigo hair (dyed from a pale blue) is usually tied in buns, leaving
+enough hair elsewhere to hang down in some places. There is a red streak in her
+hair to the right of her face, matching her striking red eyes. She always wears
+a red rose hairpin and a black faux-leather choker.
+
+Her favorite outfit is an oversized brown button-up shirt over her black,
+sleeveless top, both of which are cropped high, revealing her shoulders and
+exposing her belly. Her brown, yoke-waist skirt reaches just above her knees,
+and her black-and-red striped socks cover her shins. Her black ankle-height
+biker boots with a pansexual pride charm tied into the laces complete this
+punk-inspired outfit.
