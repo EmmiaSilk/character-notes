@@ -1,0 +1,119 @@
+---
+layout: default
+---
+<style>
+  .fact-sheet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fact-sheet__entry {
+    min-width: 175px;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .trivialist__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .trivialist__entry {
+    min-width: 225px;
+    padding-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .trivialist--likes, .trivialist--dislikes, .trivialist--skills {
+    margin-left: 10px;
+  }
+  .trivialist--likes li, .trivialist--dislikes li, .trivialist--skills li  {
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+    padding-left: 20px;
+  }
+  .trivialist--likes li {
+    background-image: url("/assets/images/other/iconmonstr-favorite-3.svg");
+  }
+  .trivialist--dislikes li {
+    background-image: url("/assets/images/other/iconmonstr-x-mark-2.svg");
+  }
+  .trivialist--skills li {
+    background-image: url("/assets/images/other/iconmonstr-gear-1.svg");
+  }
+</style>
+
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">
+      {{ page.title | escape }}
+      {%- if page.epithet -%}{{ page.epithet | escape | prepend: ', ' }}{%- endif -%}
+    </h1>
+    {%- if page.creator -%}
+      <p class="post-meta">
+        Created by {{page.creator | escape}}
+      </p>
+    {%- endif -%}
+  </header>
+
+  <div class="post-content character-simple">
+    <!-- Thumbnail -->
+    {% if page.thumbnail %}
+      {% include figure.html image=page.thumbnail
+        caption=page.thumbnail_caption width="100"
+        style="float:right; margin-left: 0.5em;" %}
+    {% endif %}
+
+    <!-- Character Quote -->
+    {% if page.quote %}
+      <figure>
+        <blockquote>
+          {{page.quote}}
+        </blockquote>
+        {%- if page.quote_context -%}
+          <figcaption>— {{page.quote_context}}</figcaption>
+        {%- endif -%}
+      </figure>
+    {% endif %}
+
+    <!-- Content Excerpt -->
+    {{ page.excerpt }}
+
+    <!-- Fact Sheet -->
+    {% if page.facts %}
+      <div class="fact-sheet">
+        {% for fact in page.facts %}
+          <div class="fact-sheet__entry">
+            <div><strong>{{fact[0] | capitalize}}</strong></div>
+            <div>{{fact[1]}}</div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Content part 2 -->
+    {{ page.content | remove: page.excerpt }}
+
+    <!-- Trivia Lists -->
+    {% if page.lists %}
+      <h2>Trivia</h2>
+      <div class="trivialist__container">
+        {% for list in page.lists %}
+        {% assign array = list[1] %}
+          <div class="trivialist__entry">
+            <h3> {{list[0] | capitalize}} </h3>
+            <ul class="trivialist trivialist--{{list[0]}}">
+              {% for item in array %}
+              <li>
+                {{item}}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+</article>
