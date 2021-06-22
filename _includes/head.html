@@ -12,7 +12,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
 
   {%- if page.thumbnail -%}
-    <meta name="og:image" content="{{page.thumbnail | relative_url}}">
+    <meta name="og:image" content="{{page.thumbnail | absolute_url }}">
   {%- endif -%}
 
 </head>
