@@ -41,6 +41,23 @@ layout: default
   .trivialist--skills li {
     background-image: url("/assets/images/other/iconmonstr-gear-1.svg");
   }
+
+  .art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .art-gallery__entry {
+    display: block;
+    border: 1px solid lightgrey;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .art-gallery__entry>img {
+    max-width: 150px;
+    max-height: 150px;
+  }
 </style>
 
 <article class="post">
@@ -114,6 +131,19 @@ layout: default
         {% endfor %}
       </div>
     {% endif %}
+
+    <!-- Art Gallery -->
+    <h2>Art Gallery</h2>
+    <ul class="post-list art-gallery">
+      {% for art in site.art %}
+        {% assign art_characters = art.characters | split: " " %}
+        {% if art_characters contains page.character_id %}
+          <a href="{{art.url}}" class="art-gallery__entry">
+            <img src="{{art.image}}" alt="" style="">
+          </a>
+        {% endif %}
+      {% endfor %}
+    </ul>
 
   </div>
 </article>
