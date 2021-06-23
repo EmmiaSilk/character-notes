@@ -4,7 +4,7 @@ title: Arlee Fullbody (Variant) by Mads
 date: 2021-06-23 00:24:00 -0400
 
 id: arlee-fullbody2-mads
-image: /assets/images/Characters/Arlee/fullbody2-mads.png
+image: /assets/images/characters/arlee/fullbody2-mads.png
 artists: mads
 characters: arlee-summers
 ---

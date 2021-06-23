@@ -4,7 +4,7 @@ title: Arlee Swimsuit Fullbody by Personnal
 date: 2021-06-23 00:33:00 -0400
 
 id: arlee-swimsuit-personnal
-image: /assets/images/Characters/Arlee/swimsuit-personnal.png
+image: /assets/images/characters/arlee/swimsuit-personnal.png
 artists: personnal
 characters: arlee-summers
 ---
