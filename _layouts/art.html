@@ -2,6 +2,14 @@
 layout: page
 ---
 <style>
+.art-display {
+  display: block;
+  border: 1px solid lightgrey;
+  max-height: 60vh;
+  max-width: 80%;
+  margin: auto;
+  padding: 0.5em;
+}
 .artist-list {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +48,7 @@ layout: page
 }
 </style>
 
-<img src="{{page.image}}">
+<img src="{{page.image}}" class="art-display">
 
 <h2> Details </h2>
 {{content}}
