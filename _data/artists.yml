@@ -1,13 +1,13 @@
 emmia:
   name: Emmia Silk
-  avatar: assets\images\Emmy.jpg
+  avatar: assets/images/alters/emmia-mystery.jpg
   links:
     Twitter: https://twitter.com/EmmiaSilk
 kitty:
   name: Kitty
 mads:
   name: Mads
-  avatar: assets\images\avatars\mads.png
+  avatar: assets/images/avatars/mads.png
   links:
     Twitter: https://twitter.com/SereneMeloetta
     Deviantart: https://www.deviantart.com/themaskedmare
