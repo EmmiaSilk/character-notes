@@ -66,39 +66,7 @@ layout: page
     {%- assign artist_ids = page.artists | split: " " -%}
     {% for artist_id in artist_ids %}
       {% assign artist = site.data.artists[artist_id] %}
-      {% if artist %}
-        <div class="artist-list__entry">
-          <!-- Name -->
-          <p><strong>{{artist.name}}</strong></p>
-          <!-- Avatar -->
-          {% if artist.avatar %}
-            {% include figure.html width=100 image=artist.avatar %}
-          {% else %}
-            {% include figure.html width=100 image="assets/images/avatars/avatar-silhouette.png" %}
-          {% endif %}
-          <!-- Links -->
-          {% if artist.links %}
-            <ul>
-              {% for link in artist.links %}
-                <li>
-                  <a href="{{link[1]}}">{{link[0]}}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          {% else %}
-            <p><em>No links found for artist.</em></p>
-          {% endif %}
-        </div>
-      {% else %}
-        <div class="artist-list__entry">
-          <!-- Name -->
-          <p><strong>{{artist_id | capitalize}}</strong></p>
-          <!-- Avatar -->
-          {% include figure.html width=100 image="assets/images/avatars/avatar-silhouette.png" %}
-          <!-- Links -->
-          <p><em>No data found for artist.</em></p>
-        </div>
-      {% endif %}
+      {% include artist-list__entry.html artist=artist artist_id=artist_id %}
     {% endfor %}
   </div>
 {% endif %}

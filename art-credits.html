@@ -28,26 +28,8 @@ title: Art Credits
 
 <div class="artist-list">
   {% for artist_hash in site.data.artists %}
-  <div class="artist-list__entry">
+    {% assign artist_id = artist_hash[0] %}
     {% assign artist = artist_hash[1] %}
-    <!-- Name -->
-    <h2> {{ artist.name }} </h2>
-    <!-- Avatar -->
-    {% if artist.avatar %}
-      {% include figure.html width=100 image=artist.avatar %}
-    {% else %}
-      {% include figure.html width=100 image="assets/images/avatars/avatar-silhouette.png" %}
-    {% endif %}
-    <!-- Links -->
-    {% if artist.links %}
-    <ul>
-      {% for link in artist.links %}
-        <li>
-          <a href="{{link[1]}}">{{link[0]}}</a>
-        </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-  </div>
+    {% include artist-list__entry.html artist=artist artist_id=artist_id %}
   {% endfor %}
 </div>
