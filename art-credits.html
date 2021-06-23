@@ -1,0 +1,35 @@
+---
+layout: page
+title: Art Credits
+---
+<style>
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.artist-list__entry {
+  min-width: 225px;
+  width: 45%;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  outline: 1px solid lightgrey;
+  padding: 0.5em;
+}
+.artist-list__entry figure {
+  float: left;
+  /* Fixes an issue with the list rendering */
+  margin-right: 10px;
+}
+.artist-list__entry ul {
+  list-style: none;
+}
+</style>
+
+<div class="artist-list">
+  {% for artist_hash in site.data.artists %}
+    {% assign artist_id = artist_hash[0] %}
+    {% assign artist = artist_hash[1] %}
+    {% include artist-list__entry.html artist=artist artist_id=artist_id %}
+  {% endfor %}
+</div>

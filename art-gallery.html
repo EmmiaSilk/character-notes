@@ -1,0 +1,32 @@
+---
+layout: default
+title: Art Gallery
+---
+<style>
+  .art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .art-gallery__entry {
+    display: block;
+    border: 1px solid lightgrey;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .art-gallery__entry>img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+</style>
+
+<h1 class="page-heading">{{page.title}}</h1>
+
+<ul class="post-list art-gallery">
+  {% for art in site.art %}
+    <a href="{{art.url}}" class="art-gallery__entry">
+      <img src="{{art.image}}" alt="" style="">
+    </a>
+  {% endfor %}
+</ul>

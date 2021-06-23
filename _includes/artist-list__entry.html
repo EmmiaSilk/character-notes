@@ -1,0 +1,33 @@
+{% if include.artist %}
+  <div class="artist-list__entry">
+    <!-- Name -->
+    <p><strong>{{include.artist.name}}</strong></p>
+    <!-- Avatar -->
+    {% if include.artist.avatar %}
+      {% include figure.html width=100 image=include.artist.avatar %}
+    {% else %}
+      {% include figure.html width=100 image="assets/images/avatars/avatar-silhouette.png" %}
+    {% endif %}
+    <!-- Links -->
+    {% if include.artist.links %}
+      <ul>
+        {% for link in include.artist.links %}
+          <li>
+            <a href="{{link[1]}}">{{link[0]}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p><em>No links found for artist.</em></p>
+    {% endif %}
+  </div>
+{% else %}
+  <div class="artist-list__entry">
+    <!-- Name -->
+    <p><strong>{{include.artist_id | capitalize}}</strong></p>
+    <!-- Avatar -->
+    {% include figure.html width=100 image="assets/images/avatars/avatar-silhouette.png" %}
+    <!-- Links -->
+    <p><em>No data found for artist.</em></p>
+  </div>
+{% endif %}

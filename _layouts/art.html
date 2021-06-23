@@ -1,0 +1,80 @@
+---
+layout: page
+---
+<style>
+.art-display {
+  display: block;
+  border: 1px solid lightgrey;
+  max-height: 60vh;
+  max-width: 80%;
+  margin: auto;
+  padding: 0.5em;
+}
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.artist-list__entry {
+  min-width: 225px;
+  width: 45%;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  outline: 1px solid lightgrey;
+  padding: 0.5em;
+}
+.artist-list__entry figure {
+  float: left;
+  /* Fixes an issue with the  */
+  margin-right: 10px;
+}
+.artist-list__entry ul {
+  list-style: none;
+}
+
+.character-link {
+  display: inline-block;
+  border: 1px solid lightgrey;
+  padding: 2px 5px;
+  border-radius: 5px;
+  /* background-color: #3333CC; */
+}
+.character-link, .character-link:visited, .character-link:hover {
+  color: inherit;
+}
+.character-link--invalid, .character-link--invalid:hover {
+  background-color: #FFAAAA;
+  text-decoration: line-through;
+}
+</style>
+
+<img src="{{page.image}}" class="art-display">
+
+<h2> Details </h2>
+{{content}}
+
+{% if page.characters %}
+  <h2>Characters</h2>
+  <div>
+    {% assign character_ids = page.characters | split: " " %}
+    {% for character_id in character_ids %}
+      {% assign character = site.characters | where:"character_id",character_id | first %}
+      {% if character %}
+        <a href="{{character.url}}" class="character-link">{{character.title}}</a>
+      {% else %}
+        <a class="character-link character-link--invalid">Invalid Character</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if page.artists %}
+  <h2>Artists</h2>
+  <div class="artist-list">
+    {%- assign artist_ids = page.artists | split: " " -%}
+    {% for artist_id in artist_ids %}
+      {% assign artist = site.data.artists[artist_id] %}
+      {% include artist-list__entry.html artist=artist artist_id=artist_id %}
+    {% endfor %}
+  </div>
+{% endif %}
