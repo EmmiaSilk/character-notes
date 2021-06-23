@@ -1,0 +1,22 @@
+---
+layout: default
+title: Art Gallery
+---
+<style>
+  .art-gallery {
+
+  }
+  .art-gallery__entry {
+
+  }
+</style>
+
+<h1 class="page-heading">{{page.title}}</h1>
+
+<ul class="post-list">
+  {% for art in site.art %}
+    <a href="{{art.url}}">
+      <img src="{{art.image}}" alt="" style="max-width: 150px; max-height: 150px;">
+    </a>
+  {% endfor %}
+</ul>

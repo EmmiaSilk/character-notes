@@ -30,9 +30,8 @@ title: Art Credits
   {% for artist_hash in site.data.artists %}
   <div class="artist-list__entry">
     {% assign artist = artist_hash[1] %}
-    {% assign artist_name = artist_hash[0] %}
     <!-- Name -->
-    <h2> {{ artist_name }} </h2>
+    <h2> {{ artist.name }} </h2>
     <!-- Avatar -->
     {% if artist.avatar %}
       {% include figure.html width=100 image=artist.avatar %}
