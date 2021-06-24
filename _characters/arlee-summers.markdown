@@ -9,7 +9,7 @@ excerpt_separator: <!--END_EXCERPT-->
 epithet: "Ultimate Escort"
 creator: Chidori
 
-image: /assets/images/Characters/ArleeThumbnail.png
+image: /assets/images/characters/arlee/thumbnail.png
 image_caption: Art by Mads
 
 quote: I've lost so much, but I promised I would never sit still.
