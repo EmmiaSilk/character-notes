@@ -57,6 +57,12 @@ layout: default
   .art-gallery__entry>img {
     max-width: 150px;
     max-height: 150px;
+
+  }
+  .character-simple__art-figure img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
   }
 </style>
 
@@ -77,8 +83,8 @@ layout: default
   <div class="post-content character-simple">
     <!-- Thumbnail -->
     {% if page.image %}
-      {% include figure.html image=page.image
-        caption=page.image_caption width="100"
+      {% include figure.html image=page.image class="character-simple__art-figure"
+        caption=page.image_caption
         style="float:right; margin-left: 0.5em;" %}
     {% endif %}
 

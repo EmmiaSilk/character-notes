@@ -6,9 +6,20 @@ title: Characters
   .character-short__entry {
     outline: 1px solid lightgrey;
     padding: 0.5em;
+    margin-bottom: 0.5em;
   }
   .character-short__entry h2 a {
     color: inherit;
+  }
+  .character-short__entry figure {
+    float:right;
+    margin-left: 0.5em;
+    text-align: center;
+  }
+  .character-short__entry figure img {
+    max-width: 100px;
+    max-height: 100px;
+    margin: auto;
   }
 </style>
 
@@ -17,7 +28,7 @@ title: Characters
 <ul class="post-list">
   {% for character in site.characters %}
   <article class="character-short__entry">
-    {% include figure.html image=character.image caption=character.image_caption width="100" style="float:right; margin-left: 0.5em" %}
+    {% include figure.html image=character.image caption=character.image_caption %}
     <header>
       <h2><a href="{{character.url}}">{{ character.title }}</a></h2>
       <p class="post-meta">
