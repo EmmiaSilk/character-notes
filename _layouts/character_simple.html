@@ -138,6 +138,26 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- Journal entries -->
+    {% assign journal_tag = page.character_id | prepend: 'character_' %}
+    {% assign journal_entries = site.tags[journal_tag] %}
+    {% if journal_entries %}
+      <h2>Journal Entries</h2>
+      <ul>
+        {% assign sorted = journal_entries | sort: 'date' %}
+        {% for entry in sorted %}
+          <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <a href="{{entry.url}}">{{entry.title}}</a>
+            {%- if entry.date -%}
+              , Written
+              <time> {{entry.date | date: date_format }} </time>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     <!-- Art Gallery -->
     <h2>Art Gallery</h2>
     <ul class="post-list art-gallery">
