@@ -9,5 +9,5 @@
 {% if character %}
   <a href="{{character.url}}" class="character-link">{{character.title}}</a>
 {% else %}
-  <a class="character-link character-link--invalid">Invalid Character</a>
+  <a class="character-link character-link--invalid">{{character_id}}</a>
 {% endif %}
