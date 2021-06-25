@@ -46,6 +46,12 @@ layout: page
   background-color: #FFAAAA;
   text-decoration: line-through;
 }
+.generator-list span::after {
+  content: ", ";
+}
+.generator-list span:last-child::after {
+  content: "";
+}
 </style>
 
 <img src="{{page.image}}" class="art-display">
@@ -70,6 +76,15 @@ layout: page
     {% for artist_id in artist_ids %}
       {% assign artist = site.data.artists[artist_id] %}
       {% include artist-list__entry.html artist=artist artist_id=artist_id %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if page.generator %}
+  <h2>Generator / Dollmaker</h2>
+  <div class="generator-list">
+    {% for generator in page.generator %}
+      <span><a href="{{generator.url}}">{{generator.name}}</a></span>
     {% endfor %}
   </div>
 {% endif %}
