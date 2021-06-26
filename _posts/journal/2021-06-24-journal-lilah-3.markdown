@@ -3,8 +3,12 @@ layout: journal
 title: "Horde of the Dragon Queen - Session 3: The Siege of Castle Greenest"
 date: 2021-06-24 16:10:00 -0400
 
+story: hotdq-lexi
 categories: journal
 tags: character_lilah-redbud
+
+description: The group learns of the Queen of Dragons and protects the
+  civilians in the keep from the besieging cultists.
 ---
 In an instant, we are surrounded. Like the previous group, this raiding party contains kobolds and a couple of humanoid mooks in purple robes, but something is different this time. They seem a little more organized, like they have a plan. And what was that strange sound I heard? As we fight on, it doesn't take long before my question is answered: Some kind of drake pounces on us from a nearby thicket. Much of this battle is a blur in my mind. Arcello went down, but was healed by Rubik. At last only one of the cultists remained, and we knocked them unconscious, leaving them alive for questioning.
 
