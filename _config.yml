@@ -38,6 +38,8 @@ collections:
     output: true
   art:
     output: true
+  stories:
+    output: true
 
 emptyArray: []
 
