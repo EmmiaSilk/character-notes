@@ -1,0 +1,47 @@
+---
+layout: page
+---
+<style>
+.character-link {
+  display: inline-block;
+  border: 1px solid lightgrey;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+.character-link, .character-link:visited, .character-link:hover {
+  color: inherit;
+}
+.character-link--invalid, .character-link--invalid:hover {
+  background-color: #FFAAAA;
+  text-decoration: line-through;
+}
+</style>
+
+<!-- Character list -->
+{% assign character_ids = page.characters | split: " " %}
+{% if character_ids != empty %}
+  <p>
+    <strong>Characters: </strong>
+    {% for character_id in character_ids %}
+      {% include link-character.html character_id=character_id %}
+    {% endfor %}
+  </p>
+{% endif %}
+
+<!-- Main contents -->
+{{content}}
+
+{% assign journal_entries = site.categories.journal %}
+{% assign journal_entries = journal_entries | where:'story',page.story_id %}
+{% if journal_entries.size != 0 %}
+  <h2>Journal Entries</h2>
+  <ul>
+    {% assign sorted = journal_entries | sort: 'date' %}
+    {% for entry in sorted %}
+      <li>
+        <a href="{{entry.url}}">{{entry.title}}</a> <br>
+        <span>{{entry.description}}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

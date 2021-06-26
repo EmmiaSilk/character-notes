@@ -3,8 +3,12 @@ layout: journal
 title: "Horde of the Dragon Queen - Session 1: Dragon Over Greenest"
 date: 2021-06-24 14:25:00 -0400
 
+story: hotdq-lexi
 categories: journal
 tags: character_lilah-redbud
+
+description: The group arrives at a town in dire need of heroes, and fight
+  their way to the keep in search of answers.
 ---
 We see the smoke long before the buildings come into view. As we grow nearer,
 the smell of ash is undeniable, as is the silhouette of the massive blue lizard

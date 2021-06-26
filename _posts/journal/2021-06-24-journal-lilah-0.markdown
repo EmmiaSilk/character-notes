@@ -3,8 +3,11 @@ layout: journal
 title: "Horde of the Dragon Queen - Introductions"
 date: 2021-06-24 13:40:00 -0400
 
+story: hotdq-lexi
 categories: journal
 tags: character_lilah-redbud
+
+description: Lilah reflects on her traveling companions on the way to Greenest.
 ---
 My name is Lilah Redbud. I'm a warrior from the former fairy colony of
 Wellglen. Folks back home call me "Lilah the Tall" because I tower over

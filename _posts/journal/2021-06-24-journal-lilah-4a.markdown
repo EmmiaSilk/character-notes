@@ -3,8 +3,12 @@ layout: journal
 title: "Horde of the Dragon Queen - Session 4a: Breath of the Blue Dragon [LILAH END]"
 date: 2021-06-24 16:15:00 -0400
 
+story: hotdq-lexi
 categories: journal
 tags: character_lilah-redbud
+
+description: Lilah Redbud is faced with the threat of an adult dragon, and
+  fights until her last breath.
 ---
 As we plot how we are going to deal with the situation in the mill, we hear a loud thump on the roof of the keep above us. We exit the keep to investigate, and we realize that the big adult dragon we saw earlier in the day has landed on the keep. Soldiers and civilians alike man the nearby ballistae, and the *real heroes* attack from afar with their weapons.
 

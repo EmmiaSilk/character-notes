@@ -3,8 +3,12 @@ layout: journal
 title: "Horde of the Dragon Queen - Session 2: The Rat Tunnel"
 date: 2021-06-24 15:36:00 -0400
 
+story: hotdq-lexi
 categories: journal
 tags: character_lilah-redbud
+
+description: Lilah helps open the way out of Castle Greenest and protects her
+  allies from dark forces.
 ---
 We enter the castle courtyard and talk to the town's leaders, Governor Nighthill and Castellan Escobert. Because he recognizes our immense combat skill as first level adventurers, Escobert asks us to open up a the exit of a secret tunnel under the keep to allow easy access in and out of the castle. We agree to help out, since preventing the town from getting overrun will help us to eventually not die. Escobert warns us that there may be rats in the tunnel, and that we need to find a key (likely somewhere in the tunnel) to open it.
 
