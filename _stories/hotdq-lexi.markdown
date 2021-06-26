@@ -22,7 +22,7 @@ currently in the party:
 | Name              | Ancestry/Class      | Player    | Joined    |
 | ----------------- | ------------------- | --------- | --------- |
 | Kosilius          | Human Fighter, NB   | Howling   | Session 1 |
-| Balthus Frostbite | Human? Wizard, NB   | Jade      | Session 1 |
+| Balthus Frostbite | Human Wizard, NB   | Jade      | Session 1 |
 | Eloen             | Elf Life Cleric, F  | Piper     | Session 1 |
 | Arcello           | Human? Bard, F      | Jammy     | Session 1 |
 | Mercury Wolfhound | Human Warlock, F    | Emmia     | Session 4 |
