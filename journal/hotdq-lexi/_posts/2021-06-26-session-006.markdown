@@ -1,0 +1,60 @@
+---
+layout: journal
+title: "Horde of the Dragon Queen - Session 6: The Temple in Greenest"
+date: 2021-07-04 14:45:00 -0400
+
+story: hotdq-lexi
+categories: journal
+tags: character_mercury-wolfhound
+
+description: The party the Temple of Chauntea by way of arms.
+---
+We arrive outside the wall surrounding the temple without incident. The
+entrance is guarded by a couple raiders, and we need to clear them out to
+provide a safe exit to the civilians.
+
+I step forward, taking aim at one of the kobolds and attempting to fire an
+eldritch blast to begin the fight. Unfortunately, my crossbow is acting up, and
+my shot blows up in my face. The enemies take notice, and I am flanked by a
+group of three angry kobolds. My co-workers come to my aid, protecting me from
+almost certain death. The ice mage Balthus casts an ice knife on the crowd in
+front of us, taking down two of the enemy Kobolds. With the numbers reduced, I
+give a command to my Drake Ailith, and she jumps off the roof of the adjacent
+building and onto the position of the enemy captain. Unfortunately, the leader
+is able to move out of the way before Ailith can strike.
+
+At this point, we're in trouble. While Kosilius and Balthus are eventually able
+to take down our enemies with careful strikes and frost rays respectively,
+Alith and I are both defeated. Arcello is forced to use a healing spell on me,
+and after the battle is over, I feed Ailith my healing potion. I will use this
+battle as a learning opportunity to hopefully improve my strategy in the
+future.
+
+From here, we pass through the gate leading into the temple courtyard. There is
+an unmanned battering ram on the front entrance. There are too many enemies on
+the left side of the church to safely dispatch, so we sneak by on the right
+side. The back entrance is mostly obscured with smoke, but we can see a group
+of raiders on the entrance. It is unclear what their goal is.
+
+The enemies haven't spotted us yet, and this provides the opportunity for us to
+get the jump on our foes. Kosilius sneaks into the smoke and takes down one of
+our opponents with a single hit, while Ailith climbs up onto an overhang above
+the entrance and surprises the group by jumping down into battle, killing a
+kobold instantly. Although Kosilius is disarmed during the battle, Ailith is
+able to find a replacement weapon in the hands of an initiate she had just
+killed. With only a few foes to battle, we take them down with much more ease
+than the fight at the entrance.
+
+We put out the campfire that was causing the smoke, and I knock on the backdoor
+of the temple. "Hey! We're here to help get you out of here," I shout through
+the door. The door opens, and a half-elven woman carrying a staff and wearing
+priestly robes pops their head out. Behind her are a ton of civilians cowering
+for their lives.
+
+After a short discussion with the priest, the Dwarven paladin gives a rallying speech, inspiring the civilians to join us in attempting to make their way back to the castle.
+
+We begin marching onward to the exit, only to find that our way is blocked by Dragon Cult raiders.
+
+**SESSION END**
+
+We earned 105 xp this session, totaling 840 out of the 900 xp needed to level up.
